@@ -1,6 +1,6 @@
 Date, Reading, Type, Metertype, Meternumber
-2018-11-28, 1000, flow, heat, 555
-2018-11-29, 17, flow, heat, 555
+2018-11-28, 1000, flow, heat, 444
+2018-11-28, 17, flow, heat, 555
 2018-11-29, 17, flow, heat, 555
 2018-11-29, 5, flow, heat, 555
 2018-11-29, 80, flow, heat, 555
@@ -9,7 +9,7 @@ Date, Reading, Type, Metertype, Meternumber
 2018-11-29, 80, flow, heat, 555
 2018-11-29, 77, flow, heat, 555
 2018-11-29, 45, flow, heat, 555
-2018-11-29, 61, flow, heat, 555
+2018-11-29, 61, flow, heat, 444
 2018-11-29, 41, flow, heat, 555
 2018-11-29, 49, flow, heat, 555
 2018-11-29, 35, flow, heat, 555
@@ -18,7 +18,7 @@ Date, Reading, Type, Metertype, Meternumber
 2018-11-29, 11, flow, heat, 555
 2018-11-29, 37, flow, heat, 555
 2018-11-29, 36, flow, heat, 555
-2018-11-29, 53, flow, heat, 555
+2018-11-29, 53, flow, heat, 444
 2018-11-29, 62, flow, heat, 555
 2018-11-29, 37, flow, heat, 555
 2018-11-29, 100, flow, heat, 555
@@ -36,7 +36,7 @@ Date, Reading, Type, Metertype, Meternumber
 2018-11-29, 38, flow, heat, 555
 2018-11-29, 30, flow, heat, 555
 2018-11-29, 42, flow, heat, 555
-2018-11-29, 40, flow, heat, 555
+2018-11-29, 40, flow, heat, 444
 2018-11-29, 96, flow, heat, 555
 2018-11-29, 71, flow, heat, 555
 2018-11-29, 59, flow, heat, 555
@@ -58,7 +58,7 @@ Date, Reading, Type, Metertype, Meternumber
 2018-11-29, 51, flow, heat, 555
 2018-11-29, 27, flow, heat, 555
 2018-11-29, 37, flow, heat, 555
-2018-11-29, 82, flow, heat, 555
+2018-11-29, 82, flow, heat, 444
 2018-11-29, 66, flow, heat, 555
 2018-11-29, 78, flow, heat, 555
 2018-11-29, 95, flow, heat, 555

@@ -1,5 +1,21 @@
 var username;
 var password;
 
-username = $("#username");
-password = $("#pass")
+
+
+function login() {
+    username = $("#username").val();
+    password = $("#pass");
+
+    document.getElementById("text").innerText="clicked";
+
+    if (username == "bruger"){
+        location.href = "test.html"
+    } else if (username == "superbruger"){
+        location.href = "superbruger.html"
+    }
+
+
+
+}
+

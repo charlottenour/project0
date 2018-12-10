@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery.csv.js"></script>
+    <script src="superbrugersearch.js"></script>
+
+    <title>Superbruger</title>
+
+</head>
+<body>
+<h1>Welcome superuser</h1>
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <form>
+                Vælg Dato:
+                <input id="daterpicker" type="date" name="dato">
+                <input type="submit" value="Ready!" onclick="readTextSuper(); return false;" />
+
+            </form>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="text"> </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

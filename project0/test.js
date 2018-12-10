@@ -11,6 +11,9 @@ var year1;
 
 function readText() {
     $.get("test3", function (data) {
+
+        document.getElementById("text").innerText = "";
+
         text = data;
         date=$("#daterpicker").val().split('-');
         year=date[0];
@@ -27,14 +30,14 @@ function readText() {
 
             var localDate = line[0].split('-');
 
-
+            var meterNumber = line[4];
 
             // // year1=date[0];
             //  //month1=date[1];
             day1=localDate[2];
 
 
-            if (day1===day){
+            if (day1===day && meterNumber == 444){
                 document.getElementById("text").innerText+=line+"\n";
             }
         });
