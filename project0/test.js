@@ -24,14 +24,14 @@ function readText() {
         textArray = $.csv.toArrays(text);
 
 
-        var innerText = "<table><tr><th>Date</th><th>Reading</th><th>Type</th><th>Metertype</th><th>Meternumber</th></tr>";
+        var innerText = "<table><tr><th>Date</th><th>Meter Number</th><th>Channel</th><th>Reading</th><th>Measuretype</th><th>Address</th></tr>";
 
         textArray.forEach(line=>{
             //date=line[0].val().split('-');
 
             var localDate = line[0].split('-');
 
-            var meterNumber = line[4];
+            var meterNumber = line[1];
 
             // // year1=date[0];
             //  //month1=date[1];
@@ -45,6 +45,7 @@ function readText() {
                     "<td>"+ line[2] +  "</td>\n" +
                     "<td>"+ line[3] +  "</td>\n" +
                     "<td>"+ line[4] +  "</td>\n" +
+                    "<td>"+ line[7] + line[8] + " <br>" + line[9] +  "</td>\n" +
                     "</tr>";
             }
 return innerText;
