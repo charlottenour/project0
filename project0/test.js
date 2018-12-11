@@ -12,7 +12,7 @@ var year1;
 function readText() {
     $.get("test3", function (data) {
 
-        document.getElementById("text").innerText = "";
+
 
         text = data;
         date=$("#daterpicker").val().split('-');
@@ -23,7 +23,8 @@ function readText() {
 
         textArray = $.csv.toArrays(text);
 
-        document.getElementById("text").innerText+=textArray[0]+"\n";
+
+        var innerText = "<table><tr><th>Date</th><th>Reading</th><th>Type</th><th>Metertype</th><th>Meternumber</th></tr>";
 
         textArray.forEach(line=>{
             //date=line[0].val().split('-');
@@ -38,9 +39,20 @@ function readText() {
 
 
             if (day1===day && meterNumber == 444){
-                document.getElementById("text").innerText+=line+"\n";
+                innerText += "<tr>\n" +
+                    "<td>"+ line[0] +  "</td>\n" +
+                    "<td>"+ line[1] +  "</td>\n" +
+                    "<td>"+ line[2] +  "</td>\n" +
+                    "<td>"+ line[3] +  "</td>\n" +
+                    "<td>"+ line[4] +  "</td>\n" +
+                    "</tr>";
             }
+return innerText;
         });
+
+        innerText += "</table>\n";
+        document.getElementById("text").innerHTML= innerText;
+
 
 
     });
