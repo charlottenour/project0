@@ -1,14 +1,9 @@
 var username;
-var password;
 
-
-
+//når der bliver klikket på login
 function login() {
     username = $("#username").val();
-    password = $("#pass");
-
-    document.getElementById("text").innerText="clicked";
-
+//checker hvad der står og sender brugerne til en ny html side
     if (username == "bruger"){
         location.href = "test.html"
     } else if (username == "superbruger"){

@@ -14,27 +14,27 @@ function readTextSuper() {
     $.get("test3", function (data) {
 
 
-        //splitter den valgte dato
+//splitter den valgte dato
         text = data;
         date=$("#daterpicker").val().split('-');
         year=date[0];
         month=date[1];
         day=date[2];
 
-        //gemmer den indtastet property value
+//gemmer den indtastet property value
         var propertyNumber = $("#propertyNumber").val();
         propertyNumber = parseInt(propertyNumber);
 
-        //
+
         textArray = $.csv.toArrays(text);
 
-        //Starter table
+//Starter table
         var innerText = "<table><tr><th>Date</th><th>Meter Number</th><th>Channel</th><th>Reading</th><th>Measuretype</th><th>Property Number</th><th>Address</th></tr>";
 
-        //Checker hver linje i vores csv file
+//Checker hver linje i vores csv file
         textArray.forEach(line=>{
 
-            //Splitter localdate i csv filen
+//Splitter localdate i csv filen
             var localDate = line[0].split('-');
 
 
@@ -43,12 +43,12 @@ function readTextSuper() {
             // /month1=date[1];
             day1=localDate[2];
 
-            //gemmer property number fra csv filen
+//gemmer property number fra csv filen
            var wantedProperty = parseInt(line[6]);
 
 
 
-            //checker om dagen er de samme og propertynumrene er de samme. Hvis de er bliver de lagt til innerText
+//checker om dagen er de samme og propertynumrene er de samme. Hvis de er bliver de lagt til innerText
             if (day1 === day && propertyNumber == wantedProperty){
                 innerText += "<tr>" +
                     "<td>"+ line[0] +  "</td>\n" +
@@ -83,7 +83,7 @@ function readTextSuper() {
 //afslutter table
         innerText += "</table>\n";
 
-        //printer innerText til text div'en i html'en
+//printer innerText til text div'en i html'en
         document.getElementById("text").innerHTML= innerText;
 
 
